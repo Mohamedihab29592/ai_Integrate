@@ -1,17 +1,26 @@
-# ai_integrate
+# AI_Integrate
 
-A new Flutter project.
+AI integrate with flutter app .
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+CLone the repo and Local host the Ai Model by following these Instrcutions:
 
-A few resources to get you started if this is your first Flutter project:
+1-Run these commands in the terminal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+pip install Flask
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# ai_Integrate
+python3 -m venv venv
+
+source venv/bin/activate  // for MAC
+source venv/Scripts/activate.  // for Windows
+
+python3 -m pip install numpy.
+
+pip install scikit-learn.
+
+python app.py  // to host the AI model and access it through your local host on port 5001.
+
+2- check if your file sucess host success or not by try this IP ('http://127.0.0.1:5001') in your browser.
+
+3- Send your list to the model using POST method use this IP : ('http://10.0.2.2:5001/predict') in your flutter app.
