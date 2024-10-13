@@ -8,16 +8,21 @@ CLone the repo and Local host the Ai Model by following these Instrcutions:
 
 1-Run these commands in the terminal
 
-pip install Flask
-
 python3 -m venv venv
 
-source venv/bin/activate  // for MAC
-source venv/Scripts/activate.  // for Windows
+source venv/bin/activate  //MAC
 
-python3 -m pip install numpy.
+source venv/Scripts/activate.  // Windows
 
-pip install scikit-learn.
+pip install Flask
+
+pip show Flask
+
+pip install numpy
+
+pip install scikit-learn==1.3.2
+
+python app.py  
 
 python app.py  // to host the AI model and access it through your local host on port 5001.
 
